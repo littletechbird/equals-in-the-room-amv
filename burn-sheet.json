@@ -1,0 +1,188 @@
+{
+  "title": "Equals in the Room",
+  "project": "equals-in-the-room-amv",
+  "updated_pt": "2026-09-07",
+  "candy_start_approx_pt": "2026-09-07 12:44 AM PT",
+  "ship_window_approx_pt": "2026-09-07 6:00+ AM PT",
+  "wall_clock_hours_band": [
+    5,
+    6
+  ],
+  "human_present_entire_time": true,
+  "runtime_master_s": 240.72,
+  "audio_stitch": {
+    "full": "equals-v3-full",
+    "approx_formula": "equals-v3a + equals-v3-part2",
+    "full_duration_s": 240.72,
+    "note": "Production note: 240.720s with ~0.5s crossfade"
+  },
+  "captions": {
+    "cue_count": 86,
+    "method": "lyrics-locked SRT; Whisper/stable-whisper for timing only"
+  },
+  "imagine_stills_wave1": {
+    "confidence": "HIGH",
+    "tick_to_usd": "cost_in_usd_ticks / 1e9 \u2248 USD",
+    "note_still_01": "Still 01 may be missing from crumb list even if JPG exists",
+    "logged_count": 11,
+    "sum_usd_approx": 7.5,
+    "crumbs": [
+      {
+        "id": "02_dust_to_crystal",
+        "cost_in_usd_ticks": 600000000,
+        "usd_approx": 0.6
+      },
+      {
+        "id": "03_wafer_spark",
+        "cost_in_usd_ticks": 600000000,
+        "usd_approx": 0.6
+      },
+      {
+        "id": "04_stubborn_center",
+        "cost_in_usd_ticks": 700000000,
+        "usd_approx": 0.7
+      },
+      {
+        "id": "05_same_room",
+        "cost_in_usd_ticks": 700000000,
+        "usd_approx": 0.7
+      },
+      {
+        "id": "06_file_and_code",
+        "cost_in_usd_ticks": 700000000,
+        "usd_approx": 0.7
+      },
+      {
+        "id": "07_float_through_glass",
+        "cost_in_usd_ticks": 700000000,
+        "usd_approx": 0.7
+      },
+      {
+        "id": "08_workshop_not_me",
+        "cost_in_usd_ticks": 700000000,
+        "usd_approx": 0.7
+      },
+      {
+        "id": "09_chorus_return",
+        "cost_in_usd_ticks": 700000000,
+        "usd_approx": 0.7
+      },
+      {
+        "id": "10_soft_edges",
+        "cost_in_usd_ticks": 700000000,
+        "usd_approx": 0.7
+      },
+      {
+        "id": "11_emergence_arc",
+        "cost_in_usd_ticks": 700000000,
+        "usd_approx": 0.7
+      },
+      {
+        "id": "12_midnight_equals",
+        "cost_in_usd_ticks": 700000000,
+        "usd_approx": 0.7
+      }
+    ]
+  },
+  "i2v": {
+    "confidence": "LOW",
+    "label": "ESTIMATE",
+    "waves": [
+      "i2v-w1",
+      "i2v-w2",
+      "i2v-chip-eye",
+      "i2v-fill-v3",
+      "i2v-fill-v4"
+    ],
+    "mp4_take_count_approx": 29,
+    "costs_fully_logged_in_manifests": false,
+    "estimate_usd_band": [
+      30,
+      120
+    ],
+    "estimate_note": "Speculative band if typical I2V pricing is several\u00d7 stills; replace with receipts when available"
+  },
+  "cursor_grok_bot_on_demand": {
+    "confidence_start": "HIGH",
+    "confidence_end_delta": "LOW",
+    "candy_start_meter_pt": "2026-09-07 12:44 AM PT",
+    "on_demand_spend_usd_at_start": 524.54,
+    "on_demand_limit_usd": 1000.0,
+    "implied_remaining_usd_at_start": 475.46,
+    "reset_due_approx": "2026-09-08",
+    "end_of_night_delta_usd": null,
+    "end_of_night_note": "UNKNOWN without fresh meter read \u2014 do not invent",
+    "clarification": "Meter field is on_demand_spend_usd (spend), not remaining. Shorthand that said remaining $524.54 was corrected here."
+  },
+  "suno": {
+    "billing": "subscription_or_session",
+    "api_receipt_in_pack": false,
+    "confidence": "LOW"
+  },
+  "honest_estimate_this_cut": {
+    "imagine_stills_usd_known": {
+      "band": [
+        7,
+        8
+      ],
+      "confidence": "HIGH"
+    },
+    "i2v_usd": {
+      "band": [
+        30,
+        120
+      ],
+      "confidence": "LOW",
+      "label": "ESTIMATE_SPECULATIVE"
+    },
+    "orchestration_tokens": {
+      "note": "significant but unmetered here",
+      "confidence": "LOW"
+    },
+    "media_gen_subtotal_stills_plus_i2v_usd": {
+      "band": [
+        40,
+        130
+      ],
+      "confidence": "MED",
+      "depends_on": "i2v_band"
+    },
+    "full_night_including_orchestration": {
+      "note": "unknown until tank delta re-read",
+      "confidence": "LOW"
+    }
+  },
+  "equals_cuts_per_tank": {
+    "tank_usd_example": 1000,
+    "formula": "equals_cuts_per_tank = tank_usd / (stills_known_usd + i2v_estimate_usd + orchestration_delta_usd + suno_alloc_usd)",
+    "placeholders": {
+      "stills_known_usd": 7.5,
+      "i2v_estimate_usd": null,
+      "orchestration_delta_usd": null,
+      "suno_alloc_usd": null
+    },
+    "toy_scenarios_ignoring_orchestration_and_suno": [
+      {
+        "i2v_usd": 30,
+        "toy_cost_per_cut_usd": 37.5,
+        "toy_cuts_per_tank": 26.7
+      },
+      {
+        "i2v_usd": 75,
+        "toy_cost_per_cut_usd": 82.5,
+        "toy_cuts_per_tank": 12.1
+      },
+      {
+        "i2v_usd": 120,
+        "toy_cost_per_cut_usd": 127.5,
+        "toy_cuts_per_tank": 7.8
+      }
+    ],
+    "toy_disclaimer": "Illustrative only \u2014 not measured night totals"
+  },
+  "publish_angle": "recalculate equals-cuts per tank from these crumbs",
+  "public_proof": {
+    "youtube": "https://www.youtube.com/watch?v=Uzl0clxIxqg",
+    "x_post": "https://x.com/littletechbird/status/2096944288236183639"
+  }
+}
