@@ -10,7 +10,7 @@ Docs + JSON only. Do **not** add binary video/audio.
 
 - `gh` authenticated as a user that can create repos under **littletechbird**
 - Working tree at `/workspace/equals-in-the-room-amv` (or a clone of this pack)
-- Public scrub already applied (no real human surname, no “Spinkatron”, no secrets/emails/phones/addresses)
+- Public scrub already applied (no real human name/surname, no personal device nicknames, no secrets/emails/phones/addresses)
 
 ---
 
